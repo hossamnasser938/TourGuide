@@ -8,16 +8,16 @@ public class Place {
 
     private String name;
     private String address;
-    private int telephone;
+    private String telephone;
     private int imageResourceId;
 
-    public Place(String name, String address, int telephone) {
+    public Place(String name, String address, String telephone) {
         this.setName(name);
         this.setAddress(address);
         this.setTelephone(telephone);
     }
 
-    public Place(String name, String address, int telephone, int imageResourceId) {
+    public Place(String name, String address, String telephone, int imageResourceId) {
         this.setName(name);
         this.setAddress(address);
         this.setTelephone(telephone);
@@ -41,11 +41,11 @@ public class Place {
         this.address = address;
     }
 
-    public int getTelephone() {
+    public String getTelephone() {
         return telephone;
     }
 
-    public void setTelephone(int telephone) {
+    public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
 
