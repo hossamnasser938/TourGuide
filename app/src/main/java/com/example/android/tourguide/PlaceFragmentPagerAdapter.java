@@ -22,13 +22,13 @@ public class PlaceFragmentPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch(position){
             case 0:
-                return null;
+                return new RestaurantFragment();
             case 1:
-                return null;
+                return new HotelsFragment();
             case 2:
-                return null;
+                return new CafesFragment();
             default:
-                return null;
+                return new SupermarketsFragment();
         }
     }
 
