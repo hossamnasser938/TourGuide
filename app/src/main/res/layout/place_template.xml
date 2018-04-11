@@ -6,13 +6,16 @@
     <ImageView
         android:id="@+id/place_image"
         android:layout_width="@dimen/image_side"
-        android:layout_height="@dimen/image_side" />
+        android:layout_height="@dimen/image_side"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
 
     <TextView
         android:id="@+id/place_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/place_image"/>
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/place_image" />
 
     <TextView
         android:id="@+id/place_address"

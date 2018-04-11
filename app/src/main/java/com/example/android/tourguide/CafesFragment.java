@@ -16,6 +16,9 @@ import java.util.ArrayList;
 
 public class CafesFragment extends Fragment {
 
+    public CafesFragment() {
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

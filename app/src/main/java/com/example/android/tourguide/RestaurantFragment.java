@@ -16,6 +16,9 @@ import java.util.ArrayList;
 
 public class RestaurantFragment extends Fragment {
 
+    public RestaurantFragment() {
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -24,6 +27,7 @@ public class RestaurantFragment extends Fragment {
 
         ArrayList<Place> restaurants = new ArrayList<>();
         restaurants.add(new Place("Tweety", "Taha Hussien st, Besides Menia club", "01026589136"));
+        restaurants.add(new Place("Crepiano", "Ibn Elkhaseeb st", "01025362514"));
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), restaurants, false);
 

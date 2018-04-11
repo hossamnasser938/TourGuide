@@ -16,6 +16,9 @@ import java.util.ArrayList;
 
 public class HotelsFragment extends Fragment {
 
+    public HotelsFragment() {
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
