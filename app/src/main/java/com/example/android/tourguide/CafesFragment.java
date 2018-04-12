@@ -26,7 +26,10 @@ public class CafesFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.place_list, container, false);
 
         ArrayList<Place> cafes = new ArrayList<>();
-        cafes.add(new Place("Zelzal", "Adnan Malky st", "01015320148"));
+        cafes.add(new Place("Solo Cafe", "Taha Hussien st", "01236524850"));
+        cafes.add(new Place("Mo Lounge", "Inside City Skape Mall", "01023698740"));
+        cafes.add(new Place("Lyaly Libnan", "Libnan Square st", "01200365200"));
+        cafes.add(new Place("Zelzal", "Korneesh st", "01236524850"));
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), cafes, false);
 

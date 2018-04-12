@@ -26,7 +26,11 @@ public class HotelsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.place_list, container, false);
 
         ArrayList<Place> hotels = new ArrayList<>();
-        hotels.add(new Place("Ekhnatoon", "Opposite to Police Club", "01019732564"));
+        hotels.add(new Place("Omar ElKhayam", "Ibn Elkhaseeb st", "01025852635"));
+        hotels.add(new Place("MG Nefertiti", "Taha Husssien st", "0102365235"));
+        hotels.add(new Place("Armed Forces", "Korneesh st", "01215730269"));
+        hotels.add(new Place("Ikhnatoon", "Besides to Police station", "01202365478"));
+        hotels.add(new Place("Grand Aton", "Besides to Horus", "01002365487"));
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), hotels, false);
 
