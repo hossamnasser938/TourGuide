@@ -26,12 +26,12 @@ public class SupermarketsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.place_list, container, false);
 
         ArrayList<Place> superMarkets = new ArrayList<>();
-        superMarkets.add(new Place("Union Markets", "Minya", "01126020307"));
-        superMarkets.add(new Place("Egypt Markets", "Minya", "01236795412"));
-        superMarkets.add(new Place("Baraka Markets", "Malawi", "01120300894"));
-        superMarkets.add(new Place("Egyptian Food Markets", "Samaloot", "01200365978"));
-        superMarkets.add(new Place("Good Markets", "Maghagha", "01025493491"));
-        superMarkets.add(new Place("Mecca Markets", "Malawi", "0120620409"));
+        superMarkets.add(new Place(getString(R.string.union_market), getString(R.string.minya), getString(R.string.union_phone)));
+        superMarkets.add(new Place(getString(R.string.egypt_market), getString(R.string.minya), getString(R.string.egypt_phone)));
+        superMarkets.add(new Place(getString(R.string.baraka_market), getString(R.string.malawi), getString(R.string.baraka_phone)));
+        superMarkets.add(new Place(getString(R.string.egyptian_food_market), getString(R.string.samaloot), getString(R.string.egyptian_phone)));
+        superMarkets.add(new Place(getString(R.string.good_market), getString(R.string.maghagha), getString(R.string.good_phone)));
+        superMarkets.add(new Place(getString(R.string.mecca_market), getString(R.string.malawi), getString(R.string.mecca_phone)));
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), superMarkets, false);
 

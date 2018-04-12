@@ -26,14 +26,14 @@ public class RestaurantFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.place_list, container, false);
 
         ArrayList<Place> restaurants = new ArrayList<>();
-        restaurants.add(new Place("ElMohamady", "Hasib st", "01026589136", R.mipmap.elmohamadi));
-        restaurants.add(new Place("Cook Door", "Adnan ElMalki st", "01113652479", R.mipmap.cook_door));
-        restaurants.add(new Place("Mcdonald's", "Korneesh st", "01023654125", R.mipmap.mcdonalds));
-        restaurants.add(new Place("Bondoka Koshary", "Tah Hussien st", "01125697485", R.mipmap.bondoka));
-        restaurants.add(new Place("Hi Proust", "Street 14", "01158910237", R.mipmap.hi_proust));
-        restaurants.add(new Place("Elkhaleel", "Korneesh st", "01026794050", R.mipmap.elkhaleel));
-        restaurants.add(new Place("KFC", "Korneesh st", "01125301450", R.mipmap.kfc));
-        restaurants.add(new Place("Toscanini", "Korneesh st", "01036571000", R.mipmap.toscanini));
+        restaurants.add(new Place(getString(R.string.elmohamady), getString(R.string.hasib_st), getString(R.string.elmohamady_phone), R.mipmap.elmohamadi));
+        restaurants.add(new Place(getString(R.string.cook_door), getString(R.string.adnan_elmalki_st), getString(R.string.cook_door_phone), R.mipmap.cook_door));
+        restaurants.add(new Place(getString(R.string.mcdonalds), getString(R.string.korneesh_st), getString(R.string.mcdonalds_phone), R.mipmap.mcdonalds));
+        restaurants.add(new Place(getString(R.string.bondoka), getString(R.string.raha_hussien_st), getString(R.string.bondoka_phone), R.mipmap.bondoka));
+        restaurants.add(new Place(getString(R.string.hi_proust), getString(R.string.street_14), getString(R.string.hi_proust_phone), R.mipmap.hi_proust));
+        restaurants.add(new Place(getString(R.string.elkhaleel), getString(R.string.korneesh_st), getString(R.string.elkhaleel_phone), R.mipmap.elkhaleel));
+        restaurants.add(new Place(getString(R.string.kfc), getString(R.string.korneesh_st), getString(R.string.kfc_phone), R.mipmap.kfc));
+        restaurants.add(new Place(getString(R.string.toscanini), getString(R.string.korneesh_st), getString(R.string.toscanini_phone), R.mipmap.toscanini));
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), restaurants, true);
 
